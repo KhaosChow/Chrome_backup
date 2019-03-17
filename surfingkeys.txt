@@ -18,30 +18,30 @@ mapkey('cya', '打开当前网址的网页缓存', function() {
 
 mapkey('oog', 'Google站内搜索', function() {
     var Bar = location.host + "";
-q = "" + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text);
-if (!q) q = prompt("\u8BF7\u8F93\u5165\u641C\u7D22\u7684\u5173\u952E\u8BCD:", "");
-if (q != null) {
-  var qlocation = " ";
-  qlocation = ('https://www.google.com/search?q=' + q + '&sitesearch=' + Bar + '');
-  window.open(qlocation);
-}
-void 0;
+    q = "" + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text);
+    if (!q) q = prompt("\u8BF7\u8F93\u5165\u641C\u7D22\u7684\u5173\u952E\u8BCD:", "");
+    if (q != null) {
+        var qlocation = " ";
+        qlocation = ('https://www.google.com/search?q=' + q + '&sitesearch=' + Bar + '');
+        window.open(qlocation);
+    }
+    void 0;
 });
 
 mapkey('gp', '显示网页所有图片', function() {
     outText = '';
-for (i = 0; i < document.images.length; i++) {
-  if (outText.indexOf(document.images[i].src) == -1) {
-    outText += '<tr><td><img src=' + document.images[i].src + '></td><td>' + document.images[i].height + '</td><td>' + document.images[i].width + '</td><td>' + document.images[i].src + '</td></tr>';
-  }
-}
-if (outText != '') {
-  imgWindow = window.open('', 'imgWin', 'width=800,height=600');
-  imgWindow.document.write('<table border=1 cellpadding=10><tr><th>Image</th><th>Height</th><th>Width</th><th>URL</th></tr>' + outText + '</table>');
-  imgWindow.document.close();
-} else {
-  alert('No images!');
-}
+    for (i = 0; i < document.images.length; i++) {
+        if (outText.indexOf(document.images[i].src) == -1) {
+            outText += '<tr><td><img src=' + document.images[i].src + '></td><td>' + document.images[i].height + '</td><td>' + document.images[i].width + '</td><td>' + document.images[i].src + '</td></tr>';
+        }
+    }
+    if (outText != '') {
+        imgWindow = window.open('', 'imgWin', 'width=800,height=600');
+        imgWindow.document.write('<table border=1 cellpadding=10><tr><th>Image</th><th>Height</th><th>Width</th><th>URL</th></tr>' + outText + '</table>');
+        imgWindow.document.close();
+    } else {
+        alert('No images!');
+        }
 });
 
 addSearchAliasX('i', 'Bilibili', 'https://search.bilibili.com/all?keyword=');
