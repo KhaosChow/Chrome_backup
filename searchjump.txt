@@ -1,5 +1,5 @@
 网页
-    Google, https://www.google.com.hk/search?q=%s&ie=utf-8&safe=off
+    Google, https://www.google.com/search?q=%s&ie=utf-8&safe=off
     // Google, https://www.google.com/ncr#num=30&newwindow=1&safe=off&hl=zh-CN&q=%s
     // wen.lu, https://wen.lu/search?q=%s&hl=zh-CN&safe=off&ie=utf-8, www.google.com.hk
     // awk.so, https://awk.so/#num=30&newwindow=1&q=%s&hl=zh-CN&safe=off&ie=utf-8, www.google.com.hk
