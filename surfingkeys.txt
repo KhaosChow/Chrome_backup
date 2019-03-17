@@ -52,7 +52,6 @@ addSearchAliasX('jd', 'JD', 'http://search.jd.com/Search?enc=utf-8&keyword=');
 addSearchAliasX('tb', 'Taobao', 'https://s.taobao.com/search?q=');
 addSearchAliasX('a', 'Douban', 'https://www.douban.com/search?q=');
 addSearchAliasX('x', 'Xiami', 'http://www.xiami.com/search?key=');
-addSearchAliasX('y', 'Youtube', 'https://www.youtube.com/results?search_query=');
 
 mapkey('cr', '保存至Instapaper',function(){
     function iprl5() {
