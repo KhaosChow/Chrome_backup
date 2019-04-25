@@ -1,3 +1,6 @@
+cmap('<Ctrl-[>', '<Ctrl-,>');
+cmap('<Ctrl-]>', '<Ctrl-.>');
+
 mapkey('zf', '#1在新标签页后台打开多个链接', function() {
     Hints.create("", Hints.dispatchMouseClick, {tabbed: true, active: false, multipleHits: true});
 });
