@@ -1,3 +1,6 @@
+settings.nextLinkRegex = /(\b(next|forward)\b)|下页|下頁|下一页|下一頁|后页|後頁|>>|»/i;
+settings.prevLinkRegex = /(\b(prev|previous|back)\b)|上页|上頁|上一页|上一頁|前页|前頁|<<|«/i;
+
 cmap('<Ctrl-[>', '<Ctrl-,>');
 cmap('<Ctrl-]>', '<Ctrl-.>');
 
